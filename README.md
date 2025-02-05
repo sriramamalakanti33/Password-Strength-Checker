@@ -47,6 +47,7 @@ password-strength-checker/
 3. Click the "Check" button to see the strength of your password.
 4. The result will be displayed below the input field, indicating whether your password is Weak, Moderate, or Strong.
 
+
 ## Contact
 
 For any questions or feedback, please contact sriramamalakanti369@gmail.com.
