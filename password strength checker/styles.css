@@ -1,96 +1,138 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
+    background: linear-gradient(135deg, #00bcd4, #004d40);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Animated Background */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 header {
-    background-color: #00695c;
+    background: rgba(0, 105, 92, 0.9);
     color: #ffffff;
     padding: 15px 0;
     width: 100%;
     text-align: center;
-    margin-bottom: 6%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Header Title */
 h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.2em;
+    letter-spacing: 1px;
 }
 
+/* Main Content */
 main {
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     max-width: 500px;
-    width: 100%;
+    width: 90%;
+    animation: slideUp 1s ease-in-out;
 }
 
+/* Password Form */
 .password-form {
     margin: 0 auto;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: #00796b;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* Form Inputs */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 label {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #004d40;
+    color: #ffffff;
 }
 
 input[type="password"] {
     padding: 12px;
     margin-bottom: 15px;
-    border: 2px solid #004d40;
+    border: 2px solid #ffffff;
     border-radius: 6px;
     font-size: 1em;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
 }
 
+input::placeholder {
+    color: #e0f7fa;
+}
+
+/* Buttons */
 button {
     padding: 12px;
-    background-color: #00796b;
+    background: linear-gradient(45deg, #00796b, #004d40);
     color: #ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    background-color: #004d40;
+    background: linear-gradient(45deg, #004d40, #002d26);
+    transform: scale(1.05);
 }
 
+/* Result Section */
 .result {
     margin-top: 15px;
     font-weight: bold;
-    color: #004d40;
+    color: #ffffff;
     font-size: 1.2em;
     text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
 footer {
     margin-top: 30px;
     text-align: center;
-    color: #00796b;
+    color: #ffffff;
+    font-size: 0.9em;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9em;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
