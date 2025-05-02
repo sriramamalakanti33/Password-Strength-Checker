@@ -1,6 +1,6 @@
 # Password-Strength-Checker
 
-This project is a simple web application that allows users to check the strength of their passwords. The strength is determined based on length, complexity, and common usage patterns.
+Password Strength Checker is a simple and interactive web application built with HTML, CSS, and JavaScript. It evaluates password strength in real-time based on factors like length, character variety, and common patterns. The tool provides immediate visual feedback, helping users create stronger, more secure passwords.
 
 ## Features
 
@@ -19,7 +19,7 @@ This project is a simple web application that allows users to check the strength
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/your-username/password-strength-checker.git
+   git clone https://github.com/sriramamalakanti33/password-strength-checker.git
    ```
 
 2. **Navigate to the project directory:**
